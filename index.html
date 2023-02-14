@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,62 @@
     <link rel="stylesheet" href="./style.css">
     <title>Valentine Budget</title>
 </head>
+
 <body>
-    
+    <div>
+        <h1 class="text-center text-5xl text-red-600 font-semibold my-12 ">
+            Valentine Budget:
+            <span>3000</span>
+        </h1>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4  ">
+        <div class="rounded-md bg-red-100 w-9/12 mx-auto text-center my-10 py-12">
+            <img class="w-64 rounded-lg mx-auto" src="./image/justin-giE4qXNX0n8-unsplash.jpg" alt="">
+            <h2 class="text-3xl font-semibold py-2">KitKat Chocolate</h2>
+            <h4 class="text-3xl font-semibold py-2">Price:<span id="kitkat-price">200</span></h4>
+            <input id="KitKat-Field" class="text-3xl text-center mx-auto block py-2" type="text" name="" id=""
+                placeholder="type here Quantity">
+            <button id="item-btn-1" class="text-3xl font-semibold bg-red-500 rounded-lg my-5 p-3">Buy Now</button>
+        </div>
+        <div class="rounded-md bg-red-100 w-9/12 mx-auto text-center my-10 py-12">
+            <img class="w-64 rounded-lg mx-auto" src="./image/candychain-J6RE4QmZumI-unsplash.jpg" alt="">
+            <h2 class="text-3xl font-semibold py-2">Rose</h2>
+            <h4 class="text-3xl font-semibold py-2">Price:<span id="rose-price">100</span></h4>
+            <input class=" py-2 text-3xl text-center mx-auto block" type="text" name="" id="rose-Field"
+                placeholder="type here Quantity">
+            <button id="item-btn-2"  class="text-3xl font-semibold bg-red-500 rounded-lg my-5 p-3">Buy Now</button>
+        </div>
+        <div class="rounded-md bg-red-100 w-9/12 mx-auto text-center my-10 py-12">
+            <img class="w-64 rounded-lg mx-auto"
+                src="./image/Leather-Corporate-Paper-Diary-Book-Paper-Size-A4-at-Rs-150-piece-in-Mumbai.png" alt="">
+            <h2 class="text-3xl font-semibold py-2">Dairy</h2>
+            <h4 class="text-3xl font-semibold py-2">Price:<span id="dairy-price">100</span></h4>
+            <input class="text-3xl text-center mx-auto block py-2" type="text" name="" id="dairy-Field"
+                placeholder="type here Quantity">
+            <button id="item-btn-3" class="text-3xl font-semibold bg-red-500 rounded-lg my-5 p-3">Buy Now</button>
+        </div>
+    </div>
+    <div class="boxx mx-auto text-3xl font-semibold div-a">
+        <h1 class="text-center py-3">Chocolate: <span id="Choco">00</span></h1>
+        <hr>
+        <h1 class="text-center py-3">Rose: <span id="rose">00</span></h1>
+        <hr>
+        <h1 class="text-center py-3">Dairy: <span id="dairy">00</span></h1>
+        <hr>
+        <h1 class="text-center py-3">Total: <span id="total">00</span></h1>
+        <br>
+        <br>
+        <div class="w-1/2 mx-auto">
+            <p class="bg-blue-500 font-semibold">Use Promo Code for 10% Discount</p>
+        </div>
+        <div>
+            <input class="mx-auto" type="text" name="" id="">
+            <button class="text-3xl font-semibold bg-red-500 rounded-lg my-5 p-2">Apply Now</button>
+        </div>
+    </div>
+<script src="./js/calculation.js"></script>
+    <script src="./js/function-price.js"></script>
 </body>
+
 </html>
