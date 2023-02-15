@@ -1,9 +1,7 @@
 function getInputValueById(id, priceStringId) {
     const quantity = document.getElementById(id).value;
     const quantityPriceStringId = document.getElementById(priceStringId).innerText;
-
     const quantityPrice = parseFloat(quantityPriceStringId)
-
     const itemCost = quantity * quantityPrice;
     document.getElementById(id).value = "";
     return itemCost;
@@ -18,5 +16,10 @@ function getValueById(id) {
     const inputFieldString = inputField.innerText;
     const input = parseFloat(inputFieldString);
     return input;
+}
 
+function valueById (id){
+    const element = document.getElementById(id);
+    const elementString = element.value;
+    return parseInt(elementString);
 }

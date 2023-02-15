@@ -19,16 +19,27 @@ document.getElementById("item-btn-3").addEventListener("click", function(){
     getTotal();
 })
 
+// total
+
 function getTotal (){
 
     const chocolateTotal = getValueById("Choco");
-
     const roseTotal = getValueById("rose");
-
     const dairyTotal = getValueById("dairy");
-
     const totalSum = chocolateTotal + roseTotal + dairyTotal;
-
     setTextById("total", totalSum);
-
 }
+
+// promo-code-apply
+
+document.getElementById("btn-promo-code").addEventListener("click", function(){
+    const promoCode = valueById("promo-code-field");
+    if(promoCode === 101){
+        const total = getValueById("total");
+        const sum = total - parseInt(total) * 0.1;
+        setTextById("all-total", sum);
+    }
+    else{
+        alert("Wrong promo code")
+    }
+})
