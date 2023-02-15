@@ -19,18 +19,16 @@ document.getElementById("item-btn-3").addEventListener("click", function(){
     getTotal();
 })
 
-// Total:
-
 function getTotal (){
-    const chocolateTotal = document.getElementById("Choco").innerText;
 
-    const roseTotal = document.getElementById("rose").innerText;
-   
-    const dairyTotal = document.getElementById("dairy").innerText;
- 
-    const totalSum = parseFloat(chocolateTotal) + parseFloat(roseTotal) + parseFloat(dairyTotal);
-    
+    const chocolateTotal = getValueById("Choco");
 
-  document.getElementById("total").innerText = totalSum;
-    // return totalSum;
+    const roseTotal = getValueById("rose");
+
+    const dairyTotal = getValueById("dairy");
+
+    const totalSum = chocolateTotal + roseTotal + dairyTotal;
+
+    setTextById("total", totalSum);
+
 }
